@@ -1,0 +1,113 @@
+.modalOverlay {
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.modalContainer {
+	background: #fff;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	color: #000000;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.modalCloseButton {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+.questionHeading { 
+	margin-top: 0;
+}
+
+.optionsContainer { 
+	flex: auto; 
+}
+
+.motionDiv {
+	height: 100%;
+	align-content: center;
+}
+
+.optionContainer {
+	display: grid;
+	gap: 20px;
+	justify-content: space-evenly;
+	grid-template-columns: auto auto auto;
+}
+
+.optionWrapper {
+	border-radius: 8px;
+	cursor: pointer;
+	min-width: 100px;
+	min-height: 100px;
+	align-content: center;
+	text-align: center;
+	border: 2px solid rgb(11, 59, 60);
+}
+
+.resultText {
+	text-align: center;
+}
+
+.resultTextLink {
+	color: -webkit-link;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.buttonsContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.buttonElement,
+.nextButton {
+	padding: 8px 16px;
+	background-color: transparent;
+	border: 2px solid rgb(11, 59, 60);
+	color: rgb(11, 59, 60);
+	border-radius: 8px;
+}
+
+.buttonElement:hover {
+	background-color: (248, 247, 246);
+}
+
+.nextButton {
+	cursor: pointer;
+}
+
+.twoColumnGrid {
+	grid-template-columns: auto auto;
+}
+
+@media (max-width: 768px) {
+	.optionContainer {
+		grid-template-columns: auto auto;
+	}
+}
+
+@media (max-width: 400px) {
+	.optionContainer {
+		grid-template-columns: auto;
+	}
+}

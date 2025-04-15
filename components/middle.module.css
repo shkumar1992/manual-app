@@ -1,0 +1,158 @@
+.middleSection {
+  padding: 70px 238px;
+  background-color: #fff;
+}
+
+.mainHeading {
+  font-family: TTNorms-Bold, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+  color: #0B3B3C;
+  margin-bottom: 4rem;
+}
+
+.helpItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.helpImageWrapper {
+  flex: 1;
+  margin-right: 2rem;
+  z-index: 10;
+}
+
+.helpImage {
+  width: 80%;
+  height: auto;
+}
+
+.helpText {
+  flex: 1;
+  position: relative;
+  z-index: 10;
+}
+
+.bgNumber {
+  font-family: TTNorms-Bold, Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-size: 450px;
+  font-weight: 400;
+  color: #E8EFE9;
+  z-index: 5;
+}
+
+.subTitle {
+  font-family: TTNorms-Regular, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #6D8A83;
+  letter-spacing: 1px;
+  margin-bottom: 0.10px;
+  z-index: 10;
+}
+
+.helpTitle {
+  font-family: TTNorms-Bold, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  color: #0B3B3C;
+  margin-bottom: 22px;
+  line-height: 40px;
+  max-width: 90%;
+  z-index: 10;
+}
+
+.helpParagraph {
+  font-family: TTNorms-Regular, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #0B3B3C;
+  line-height: 30px;
+  letter-spacing: 0;
+  z-index: 10;
+}
+
+.helpItem:nth-child(2) {
+  .bgNumber {
+    left: 30%
+  }
+}
+
+.helpItem:nth-child(3) {
+  flex-direction: row-reverse;
+
+  .bgNumber {
+    right: 40%;
+  }
+}
+
+.helpItem:nth-child(3) .helpImageWrapper {
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .middleSection {
+    padding: 3rem 2rem;
+  }
+
+  .helpItem:nth-child(2) {
+    .bgNumber {
+      left: 30%
+    }
+  }
+  
+  .helpItem:nth-child(3) {
+    flex-direction: row-reverse;
+  
+    .bgNumber {
+      right: 40%;
+    }
+  }
+
+  .bgNumber {
+    font-size: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .helpItem {
+    flex-direction: column;
+  }
+
+  .helpItem:nth-child(3) {
+    flex-direction: column;
+  }
+
+  .helpImageWrapper {
+    margin-right: 0;
+    margin-left: 0 !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .helpImage {
+    width: 100%;
+  }
+
+  .bgNumber {
+    font-size: 200px;
+    position: static;
+    order: -1;
+  }
+
+  .mainHeading {
+    margin-bottom: 2rem;
+  }
+
+  .helpTitle {
+    max-width: 100%;
+  }
+}
